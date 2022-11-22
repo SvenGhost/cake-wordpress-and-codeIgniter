@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "76e73b09-41ed-4860-a96d-94c063b31db4",
+		"name": "Cake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22764716"
+	},
+	"item": [
+		{
+			"name": "Listing",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": false,
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "Ninja@cake_Project**",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Sugar4555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cakeci.projectanddemoserver.com/products/all_products",
+					"protocol": "https",
+					"host": [
+						"cakeci",
+						"projectanddemoserver",
+						"com"
+					],
+					"path": [
+						"products",
+						"all_products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Cake New 555",
+							"type": "text"
+						},
+						{
+							"key": "product_type",
+							"value": "Sugar4555",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "32555.00",
+							"type": "text"
+						},
+						{
+							"key": "product_recipe",
+							"value": "test going on asdf sadf dsafsad fa dsfdsafdsaf",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "Ninja@cake_Project**",
+							"type": "text"
+						},
+						{
+							"key": "product_images[]",
+							"type": "file",
+							"src": [
+								"/C:/Users/Lenovo/Desktop/sample img/334.jpg",
+								"/C:/Users/Lenovo/Desktop/sample img/335.jpg",
+								"/C:/Users/Lenovo/Desktop/sample img/556.png",
+								"/C:/Users/Lenovo/Desktop/sample img/667.png"
+							]
+						},
+						{
+							"key": "id",
+							"value": "27",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cakeci.projectanddemoserver.com/products/edit_product",
+					"protocol": "https",
+					"host": [
+						"cakeci",
+						"projectanddemoserver",
+						"com"
+					],
+					"path": [
+						"products",
+						"edit_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "Ninja@cake_Project**",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cakeci.projectanddemoserver.com/products/delete_product",
+					"protocol": "https",
+					"host": [
+						"cakeci",
+						"projectanddemoserver",
+						"com"
+					],
+					"path": [
+						"products",
+						"delete_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Product Information",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "27",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "Ninja@cake_Project**",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cakeci.projectanddemoserver.com/products/edit_product_information",
+					"protocol": "https",
+					"host": [
+						"cakeci",
+						"projectanddemoserver",
+						"com"
+					],
+					"path": [
+						"products",
+						"edit_product_information"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Cake New 555",
+							"type": "text"
+						},
+						{
+							"key": "product_type",
+							"value": "Sugar4555",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "32555.00",
+							"type": "text"
+						},
+						{
+							"key": "product_recipe",
+							"value": "test going on asdf sadf dsafsad fa dsfdsafdsaf",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "Ninja@cake_Project**",
+							"type": "text"
+						},
+						{
+							"key": "product_images[]",
+							"type": "file",
+							"src": [
+								"/C:/Users/Lenovo/Desktop/sample img/334.jpg",
+								"/C:/Users/Lenovo/Desktop/sample img/335.jpg",
+								"/C:/Users/Lenovo/Desktop/sample img/556.png",
+								"/C:/Users/Lenovo/Desktop/sample img/667.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cakeci.projectanddemoserver.com/products/add_product",
+					"protocol": "https",
+					"host": [
+						"cakeci",
+						"projectanddemoserver",
+						"com"
+					],
+					"path": [
+						"products",
+						"add_product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
